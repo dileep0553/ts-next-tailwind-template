@@ -10,13 +10,19 @@
 
 ## Ingredients ✨:
 
-- NextJS 13 🚀
+- NextJS 🚀
 - TailwindCSS 🦄
 - Typescript 🦺
 - Dark Mode Support 🌓
 - ESLint + Prettier Config 📂
 - Husky 🐶
 - Self-Hosted Inter Font ␊
+
+Under the _components_ folder, use Container for each of your pages - as it provides a reusable starting point for every page.
+
+```jsx
+<Container>...pageElements</Container>
+```
 
 ## Getting started
 
@@ -41,18 +47,11 @@ git clone git@github.com:cristicretu/ts-next-tailwind-template.git
 npx create-next-app -e https://github.com/cristicretu/ts-next-tailwind-template project-name
 ```
 
-* Tip: if you want to use the version prior to Next.js 13 with the app directory, use:
-```bash
-npx create-next-app -e https://github.com/cristicretu/ts-next-tailwind-template/tree/1ac5d6dd4157ea3c7cc89f14fbfbf01ab0b495fc project-name
-```
-
 Install the required packages and run the template
 
 ```bash
 cd project-name
-npm install
-# yarn install
-# pnpm install
+yarn install
 ```
 
 ## Included
@@ -62,9 +61,8 @@ npm install
 
 ### Packages
 
-1. Next-themes: An abstraction for themes in your Next.js app
+1. Next-themes: An abstraction for themes in your Next.js app.
 2. react-use: react-hooks
-3. Framer Motion: animation library
 
 ### Custom globals.css
 
@@ -75,20 +73,20 @@ npm install
 ### Absolute Imports
 
 ```tsx
-import TextField from '../../../ui/TextField.tsx'
+import TextField from '../../../components/TextField.tsx'
 ```
 
 changes to
 
 ```tsx
-import TextField from 'uis/TextField.tsx'
+import TextField from 'components/TextField.tsx'
 ```
 
 ### SEO optimization found in `Container.tsx`
 
 ### Folder structuring & organization
 
-> Under `/ui/` & `/public/`
+> Under `/components/` & `/public/`
 
 ### Self Hosted Inter Font
 
