@@ -1,7 +1,7 @@
 import React, { useEffect, useState, RefObject, useRef } from 'react'
 import { useTheme } from 'next-themes'
 import { motion } from 'framer-motion'
-import LinkedInProfileBadge from 'react-linkedin-profile-badge'
+// import LinkedInProfileBadge from 'react-linkedin-profile-badge'
 import { Input, Button, Textarea } from '@material-tailwind/react'
 import emailjs from '@emailjs/browser'
 
@@ -80,6 +80,58 @@ export function GitHubCard() {
           View Profile
         </a>
       </div>
+    </div>
+  )
+}
+
+export function LinkedInBadge() {
+  useEffect(() => {
+    const script = document.createElement('script')
+
+    script.src = 'https://platform.linkedin.com/badges/js/profile.js'
+    script.async = true
+    script.defer = true
+
+    document.body.appendChild(script)
+
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
+
+  return (
+    <div>
+      <div
+        className='badge-base LI-profile-badge'
+        data-locale='en_US'
+        data-size='large'
+        data-theme='light'
+        data-type='HORIZONTAL'
+        data-vanity='chandra-pasumarthi-501278117'
+        data-version='v1'
+      >
+        {/* <a
+          className='badge-base__link LI-simple-link'
+          href='https://www.linkedin.com/in/chandra-pasumarthi-501278117?trk=profile-badge'
+        >
+          chandra pasumarthi
+        </a> */}
+      </div>
+
+      {/* <div
+        class='badge-base LI-profile-badge'
+        data-locale='en_US'
+        data-size='medium'
+        data-theme='light'
+        data-type='VERTICAL'
+        data-vanity='YOUR_OWN_VANITY_HERE'
+        data-version='v1'
+      >
+        <a
+          class='badge-base__link LI-simple-link'
+          href='https://au.linkedin.com/in/YOUR_PROFILE_HERE?trk=profile-badge'
+        />
+      </div> */}
     </div>
   )
 }
@@ -171,13 +223,14 @@ export default function ContactTitle() {
                     },
                   }}
                 >
-                  <LinkedInProfileBadge
+                  <LinkedInBadge />
+                  {/* <LinkedInProfileBadge
                     profileId='chandra-pasumarthi-501278117'
                     size='large'
                     locale='en_US'
                     orientation='horizontal'
                     version='v1'
-                  />
+                  /> */}
                 </motion.div>
               </motion.div>
             </div>
