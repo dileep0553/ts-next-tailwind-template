@@ -1,7 +1,8 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-module.exports = {
+module.exports = withMT({
   mode: 'jit',
   content: [
     './components/**/*.{js,ts,jsx,tsx}',
@@ -22,5 +23,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    require('tailwindcss-animated')
+  ],
+})

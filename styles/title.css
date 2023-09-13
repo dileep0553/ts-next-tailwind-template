@@ -1,0 +1,204 @@
+.background_position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.light_bg_image {
+  background: url('/img/background_light.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dark_bg_image {
+  background: url('/img/background_dark.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hr {
+  height: 3px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+.hr:after,
+.hr:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 50%;
+  left: 0;
+}
+.hr:before {
+  background: linear-gradient(
+    90deg,
+    #10111f 0%,
+    #10111f 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 15px;
+  background-position: center;
+  z-index: 1;
+}
+.hr:after {
+  transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
+  transition: opacity 0.3s ease, animation 0.3s ease;
+  transition: opacity 0.3s ease, animation 0.3s ease,
+    -webkit-animation 0.3s ease;
+  background: linear-gradient(
+    to right,
+    #1d4ed8 5%,
+    #3b82f6 15%,
+    #bfdbfe 25%,
+    #fecdd3 35%,
+    #fb7185 45%,
+    #e11d48 55%,
+    #f43f5e 65%,
+    #fda4af 75%,
+    #818cf8 85%,
+    #1d4ed8 95%
+  );
+  background-size: 200%;
+  background-position: 0%;
+  -webkit-animation: bar 15s linear infinite;
+  animation: bar 15s linear infinite;
+}
+@-webkit-keyframes bar {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+@keyframes bar {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.dark-hr.hr.anim:before {
+  background: linear-gradient(
+    90deg,
+    #10111f 0%,
+    #10111f 10%,
+    transparent 10%,
+    transparent 20%,
+    #10111f 20%,
+    #10111f 30%,
+    transparent 30%,
+    transparent 40%,
+    #10111f 40%,
+    #10111f 50%,
+    transparent 50%,
+    transparent 60%,
+    #10111f 60%,
+    #10111f 70%,
+    transparent 70%,
+    transparent 80%,
+    #10111f 80%,
+    #10111f 90%,
+    transparent 90%,
+    transparent 100%
+  );
+  background-size: 150px;
+  background-position: center;
+  z-index: 1;
+  -webkit-animation: bar 120s linear infinite;
+  animation: bar 120s linear infinite;
+}
+.hr.anim:before {
+  background: linear-gradient(
+    90deg,
+    #fafafa 0%,
+    #fafafa 10%,
+    transparent 10%,
+    transparent 20%,
+    #fafafa 20%,
+    #fafafa 30%,
+    transparent 30%,
+    transparent 40%,
+    #fafafa 40%,
+    #fafafa 50%,
+    transparent 50%,
+    transparent 60%,
+    #fafafa 60%,
+    #fafafa 70%,
+    transparent 70%,
+    transparent 80%,
+    #fafafa 80%,
+    #fafafa 90%,
+    transparent 90%,
+    transparent 100%
+  );
+  background-size: 150px;
+  background-position: center;
+  z-index: 1;
+  -webkit-animation: bar 120s linear infinite;
+  animation: bar 120s linear infinite;
+}
+.hr.anim:hover:before {
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+}
+.hr.anim:hover:after {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/* .contact_title {
+  text-shadow: 1px 10px 10px transparent;
+} */
+.contact_title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30%;
+  height: 0%;
+  box-shadow: 0px 50px 55px 9px #2250af;
+  opacity: 1;
+  transform: translate(
+    -75%,
+    10px
+  ); /* Place the pseudo-element behind the content of the div */
+}
+.contact_title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30%;
+  height: 0%;
+  box-shadow: 0px 50px 55px 6px #ff2f30;
+  opacity: 1;
+  transform: translate(
+    -25%,
+    10px
+  ); /* Place the pseudo-element behind the content of the div */
+}
+
+.linkedinItem iframe {
+  margin: auto;
+  border-radius: 8px;
+  clip-path: inset(0 3px 4px 0);
+}
+
+.peer:focus ~ .dark_textarea_label {
+  color: #fff !important ;
+}
+.peer ~ .dark_textarea_label {
+  color: #fff !important ;
+}
+.peer:focus ~ .dark_textarea_label::after {
+  border-color: #ffffff !important;
+}
+.peer:focus ~ .dark_textarea_label::before {
+  border-color: #ffffff !important;
+}

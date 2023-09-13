@@ -23,9 +23,9 @@ export default function BigText({ slides }: BigTextProps) {
   }, 2000)
 
   return (
-    <div className='flex flex-col items-center text-6xl font-extrabold tracking-tight md:text-9xl'>
+    <div className='flex flex-col items-center text-6xl font-extrabold tracking-tight background_position'>
       <div className='flex flex-col items-center'>
-        <p className='text-2xl tracking-normal sm:text-3xl'>The ultimate</p>
+        {/* <p className='text-2xl tracking-normal sm:text-3xl'>The ultimate</p> */}
         {slides.map((text, index) => {
           return (
             <span key={text} className='relative block text-center'>
@@ -42,8 +42,8 @@ export default function BigText({ slides }: BigTextProps) {
               <span
                 className={classNames(
                   'decoration-clone bg-clip-text text-transparent bg-gradient-to-r',
-                  index === 0 ? 'from-yellow-400 via-red-500 to-pink-500' : '',
-                  index === 1 ? 'from-purple-400 via-pink-500 to-red-500' : '',
+                  index === 0 ? 'from-blue-900 via-blue-100 to-blue-600' : '',
+                  index === 1 ? 'from-blue-900 via-blue-100 to-blue-600' : '',
                   index === 2 ? 'from-green-400 to-blue-500' : ''
                 )}
               >
@@ -53,10 +53,11 @@ export default function BigText({ slides }: BigTextProps) {
           )
         })}
         <p className='mt-4 text-2xl tracking-normal sm:text-3xl'>
-          Front-End Template.
+          - Front-End Developer
         </p>
         <p className='mt-6 text-lg font-medium tracking-normal text-tertiary'>
-          Edit pages/index.tsx to get started. 🚀
+          React Developer
+          {/* Edit pages/index.tsx to get started. 🚀 */}
         </p>
       </div>
     </div>
