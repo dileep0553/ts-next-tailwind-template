@@ -17,7 +17,7 @@ export function GitHubCard() {
       })
   }, [])
   return (
-    <div className='max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-xs xl:max-w-xs sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto bg-white border border-slate-100 border-t-transparent rounded-lg text-gray-900'>
+    <div className='max-w-2xl mx-4 sm:max-w-lg md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto bg-white border border-slate-100 border-t-transparent rounded-lg text-gray-900'>
       <div className='rounded-t-lg h-20 overflow-hidden'>
         <img
           className='object-cover object-top w-full'
@@ -188,7 +188,7 @@ export default function ContactTitle() {
 
               <div className='lg:py-0'>
                 <h2 className='text-center'>
-                  <span className='contact_title text-5xl relative bottom-6 sm:bottom-8 font-semibold sm:text-6xl  bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-red-600'>
+                  <span className='contact_title text-4xl sm:text-5xl relative bottom-6 sm:bottom-8 font-semibold sm:text-6xl  bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-red-600'>
                     Contact Me
                   </span>
                 </h2>
@@ -197,7 +197,7 @@ export default function ContactTitle() {
           </div>
         </section>
         <section className='my-20 '>
-          <div className='grid grid-cols-2 justify-center'>
+          <div className='grid sm:grid-cols-2 justify-center'>
             <div className='linkedinItem'>
               <motion.div
                 initial='offscreen'
@@ -274,7 +274,7 @@ export default function ContactTitle() {
             ref={form}
             onSubmit={sendEmail}
           >
-            <div className='grid grid-cols-2 gap-8 '>
+            <div className='grid sm:grid-cols-2 gap-8 '>
               <div className='grid grid-rows-3 gap-8'>
                 <Input
                   className='focus:shadow-none'

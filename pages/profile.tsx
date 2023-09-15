@@ -1,5 +1,6 @@
 import BigText from 'components/BigText'
 import Brief from 'components/Brief/Brief'
+import Certifications from 'components/Certifications/Certifications'
 import Container from 'components/Container'
 import Footer from 'components/Footer/Footer'
 import Profile from 'components/Profile/Profile'
@@ -18,6 +19,7 @@ export default function MyProfile() {
       <Profile />
       <Skills />
       <Timeline />
+      <Certifications />
       {/* <Projects /> */}
       <Footer />
     </>

@@ -48,7 +48,7 @@ export default function Projects() {
                   <img
                     alt='Party'
                     src='img/p2-4.png'
-                    className='p-1 h-max  object-fill lg:w-full'
+                    className='p-1 h-auto  object-fill lg:w-full'
                   />
                 </div>
                 <div>
@@ -80,10 +80,12 @@ export default function Projects() {
                   <h2 className='text-2xl font-bold sm:text-2xl'>Easyreadz</h2>
 
                   <p className='text-gray-600 dark:text-gray-300'>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Aut qui hic atque tenetur quis eius quos ea neque sunt,
-                    accusantium soluta minus veniam tempora deserunt? Molestiae
-                    eius quidem quam repellat.
+                    I have built an easy-to-use e-book desktop application.With
+                    a sleek, user-friendly interface, Experience seamless
+                    reading, and make use of handy features like bookmarks and
+                    notes. Shop the latest titles securely, and your reading
+                    progress syncs across devices. Dive into literature
+                    effortlessly from your desktop.
                   </p>
                 </div>
               </div>
@@ -97,7 +99,7 @@ export default function Projects() {
                   <img
                     alt='Party'
                     src='img/p3-4.jpg'
-                    className=' h-max p-1 object-fill lg:w-full'
+                    className=' h-auto p-1 object-fill lg:w-full'
                   />
                 </div>
                 <div>
