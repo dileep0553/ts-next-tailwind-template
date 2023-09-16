@@ -21,7 +21,7 @@ export function GitHubCard() {
       <div className='rounded-t-lg h-20 overflow-hidden'>
         <img
           className='object-cover object-top w-full'
-          src='https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+          src='https://files.readme.io/d14112d-Cloudsmith-Integrations-Banner-GitHub.png'
           alt='Mountain'
         />
       </div>
@@ -188,7 +188,7 @@ export default function ContactTitle() {
 
               <div className='lg:py-0'>
                 <h2 className='text-center'>
-                  <span className='contact_title text-4xl sm:text-5xl relative bottom-6 sm:bottom-8 font-semibold sm:text-6xl  bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-red-600'>
+                  <span className='contact_title text-4xl sm:text-5xl font-semibold  bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-red-600'>
                     Contact Me
                   </span>
                 </h2>

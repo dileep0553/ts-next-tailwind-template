@@ -152,9 +152,10 @@
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
-/* .contact_title {
-  text-shadow: 1px 10px 10px transparent;
-} */
+.contact_title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 .contact_title::before {
   content: '';
   position: absolute;

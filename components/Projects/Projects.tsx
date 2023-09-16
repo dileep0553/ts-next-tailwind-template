@@ -31,10 +31,12 @@ export default function Projects() {
                   </h2>
 
                   <p className='text-gray-600 dark:text-gray-300'>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Aut qui hic atque tenetur quis eius quos ea neque sunt,
-                    accusantium soluta minus veniam tempora deserunt? Molestiae
-                    eius quidem quam repellat.
+                    I have crafted a landing page for a client using React and
+                    Redux that ensures optimal user engagement and conversion.
+                    The page boasts a contemporary and user-friendly design,
+                    effortless navigation, and a responsive layout ensuring
+                    perfect display across all devices, from desktops to
+                    smartphones.
                   </p>
                 </div>
               </div>
@@ -140,10 +142,11 @@ export default function Projects() {
                 </h2>
 
                 <p className='mt-4 text-gray-600 dark:text-gray-300'>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-                  qui hic atque tenetur quis eius quos ea neque sunt,
-                  accusantium soluta minus veniam tempora deserunt? Molestiae
-                  eius quidem quam repellat.
+                  I have built a platform for professionals. Utilizing
+                  location-based features, pinpoint exact offices you've visited
+                  and navigate effortlessly with Google Maps integration. Share
+                  ratings, gain insights from peers, and plan your next business
+                  visit with ease. Enhance every corporate encounter.
                 </p>
               </div>
             </div>
